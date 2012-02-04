@@ -25,8 +25,9 @@ public class ActivitiesManager {
 		return list;
 	}
 	
-	public IActivity GetActivity(String uid)
+	public Activity GetActivity(String uid)
 	{
+		return null;
 		/*
 		 * if(activityclass.UID.equals uid)
 		 *     return new activityclass();

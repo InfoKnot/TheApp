@@ -13,5 +13,5 @@ import android.widget.Button;
 public abstract class Activity {
 	public static String UID;
 	public static UserType USERLEVEL;
-	public static Button GetButton();
+	public static abstract Button GetButton();
 }

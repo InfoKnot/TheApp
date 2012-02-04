@@ -3,7 +3,6 @@ package com.app;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.app.activities.IActivity;
 import com.app.user.User;
 import com.app.user.UserType;
 
@@ -36,9 +35,9 @@ public class TheAPPActivity extends Activity {
         	TextView headerText = new TextView(null);
         	headerText.setBackgroundColor(Color.GRAY);
         	headerText.setText(
-        			"Name: " + _mainUser.getName() +
-        			"Phone Number: " + _mainUser.getPhoneNumber() +
-        			"Email: " + _mainUser.getEmail() +
+        			"Name: " + _mainUser.getName() + "\n" +
+        			"Phone Number: " + _mainUser.getPhoneNumber() +"\n" +
+        			"Email: " + _mainUser.getEmail() +"\n" +
         			"Position: " + _mainUser.getUserType().toString(),
         			TextView.BufferType.NORMAL);
         	headerView.addView(headerText);
@@ -57,7 +56,7 @@ public class TheAPPActivity extends Activity {
     
     private boolean login() {
     	//TODO: handle user login.
-    	_mainUser = new User(UserType.Employee, "TestDummy", "(999) 999-9999", "testDummy@yahoo.com");
+    	_mainUser = new User(UserType.RA, "TestDummy", "(999) 999-9999", "testDummy@yahoo.com");
     	return true;
     }
 }
