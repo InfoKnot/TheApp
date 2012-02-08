@@ -1,9 +1,5 @@
 package com.app;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.app.activities.IActivity;
 import com.app.user.User;
 import com.app.user.UserType;
 
@@ -13,7 +9,6 @@ import android.os.Bundle;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class TheAPPActivity extends Activity {
@@ -57,7 +52,7 @@ public class TheAPPActivity extends Activity {
     
     private boolean login() {
     	//TODO: handle user login.
-    	_mainUser = new User(UserType.Employee, "TestDummy", "(999) 999-9999", "testDummy@yahoo.com");
+    	_mainUser = new User(UserType.RA, "TestDummy", "(999) 999-9999", "testDummy@yahoo.com");
     	return true;
     }
 }

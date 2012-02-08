@@ -2,7 +2,6 @@ package com.app.activities;
 
 import com.app.user.UserType;
 
-import android.text.Layout;
 import android.widget.Button;
 
 /**
@@ -10,8 +9,10 @@ import android.widget.Button;
  * @author owner
  *
  */
-public abstract class Activity {
+public abstract class Service {
 	public static String UID;
 	public static UserType USERLEVEL;
-	public static Button GetButton();
+	public static Button GetButton() {
+		return null;
+	}
 }

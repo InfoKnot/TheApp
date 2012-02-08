@@ -15,7 +15,7 @@ public class ActivitiesManager {
 		
 	}
 	
-	public List<Button> GetActivityButtons(UserType userType)
+	public List<Button> GetServiceButtons(UserType userType)
 	{
 		List<Button> list = new ArrayList();
 		/*
@@ -25,8 +25,9 @@ public class ActivitiesManager {
 		return list;
 	}
 	
-	public IActivity GetActivity(String uid)
+	public Service GetService(String uid)
 	{
+		return null;
 		/*
 		 * if(activityclass.UID.equals uid)
 		 *     return new activityclass();
