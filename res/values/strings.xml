@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="hello">Hello World, TheAPPActivity!</string>
-    <string name="app_name">TheAPP</string>
-    <string name="header_text">This is where the persons info will go!</string>
-</resources>
