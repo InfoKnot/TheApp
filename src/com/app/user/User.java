@@ -1,13 +1,40 @@
 package com.app.user;
+
+import com.app.user.loginservice.ILoginService;
+import com.app.user.loginservice.MockLoginImpl;
+
 /**
  * 
  * @author Devin Kelly-Collins
  */
 public class User {
+	private static User _loggedUser = null;
 	private UserType _userType;
 	private String _name;
 	private String _phone;
 	private String _email;
+	
+	public static User LoginUser(String username, String password)
+	{
+		if(_loggedUser == null)
+			//TODO: throw error.
+		
+		ILoginService loginService = new MockLoginImpl();
+		_loggedUser = loginService.LoginUser(username, password);
+		return _loggedUser;
+	}
+	
+	public static User GetLoggedUser()
+	{
+		return _loggedUSer;
+	}
+	
+	public static void LogoutUser()
+	{
+		ILoginService loginService = new MockLoginImpl();
+		loginService.LogoutUser();
+		_loggedUser = null;
+	}
 	
 	public User(){
 		_userType = null;
