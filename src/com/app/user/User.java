@@ -8,32 +8,31 @@ import com.app.user.loginservice.MockLoginImpl;
  * @author Devin Kelly-Collins
  */
 public class User {
-	private static User _loggedUser = null;
 	private UserType _userType;
 	private String _name;
 	private String _phone;
 	private String _email;
 	
-	public static User LoginUser(String username, String password)
+	public static User LoggedUser = null;
+	
+	public static User LoginUser(String username, String password) throws Exception
 	{
-		if(_loggedUser == null)
-			//TODO: throw error.
+		if(LoggedUser != null)
+			throw new Exception("LoggedUser != null, must log out current user.");
 		
 		ILoginService loginService = new MockLoginImpl();
-		_loggedUser = loginService.LoginUser(username, password);
-		return _loggedUser;
+		LoggedUser = loginService.LoginUser(username, password);
+		return LoggedUser;
 	}
 	
-	public static User GetLoggedUser()
+	public static void LogoutUser() throws Exception
 	{
-		return _loggedUSer;
-	}
-	
-	public static void LogoutUser()
-	{
+		if(LoggedUser == null)
+			throw new Exception("LoggedUser == null, no user to log out");
+		
 		ILoginService loginService = new MockLoginImpl();
 		loginService.LogoutUser();
-		_loggedUser = null;
+		LoggedUser = null;
 	}
 	
 	public User(){
