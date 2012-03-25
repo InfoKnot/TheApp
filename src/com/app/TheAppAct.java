@@ -2,6 +2,7 @@ package com.app;
 
 import android.R;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 public class TheAppAct extends Activity {
@@ -9,8 +10,8 @@ public class TheAppAct extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Get user from login.
-        //Start update process.
-        //Create main layout.
+        
+        //Test Main layout.
+        //setContentView(R.);
     }
 }

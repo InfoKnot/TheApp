@@ -6,12 +6,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.app.R;
-import com.app.acts.AppAct;
 import com.app.user.User;
 
-public class LoginAct extends Activity implements AppAct
+public class LoginAct extends Activity
 {
-	private static User _user;
+	/*private static User _user;
 
 	public static User GetUser()
 	{
@@ -64,5 +63,5 @@ public class LoginAct extends Activity implements AppAct
 		//Check what activity finished.
 		setResults(RESULT_OK);
 		finish();
-	}
+	}*/
 }
