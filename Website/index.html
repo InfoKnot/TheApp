@@ -1,23 +1,24 @@
 <html>
 	<head>
-		<title>InfoKnot - Homepage</title>
+		<title>InfoKnot</title>
 		<meta http-equiv="Content-Type" content="text/html">
 		<meta name="Keywords" content="information,college,services,optimizing">
 		<meta name="Description" content="InfoKnot's webpage">
-		<script type="text/javascript" src="script.js"></script>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="js/index.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
 	</head>
 	<body>
-		<div id=pageHeader>
-			<img src="InfoKnotLogo.jpg"/>
-		</div>
-		<div id=content>
-			<iframe width="480" height="360" src="http://www.youtube.com/embed/D-CN7vnNCpk" frameborder="0" allowfullscreen></iframe>
-			<br>
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/InfoKnot" scrolling="no" frameborder="0" style="border:none; width:450px; height:80px; "></iframe>
-		</div>
-		<div id=pageFooter>
-			<p>InfoKnot is a business proposition being presented in K-State's Next Big Idea competion<p>
+		<div id="content">
+			<video id="intromov" autoplay="true">
+				<source src="vids/intromov.flv" type="video/flv" />
+				<!-- <source src="vids/intromov.avi" type="video/avi" /> -->
+				<source src="vids/intromov.mov" type="video/mov" />
+				<source src="vids/intromov.webm" type="video/webm" />
+				<source src="vids/intromov.wmv" type="video/wmv" />
+				<img src="pics/InfoKnotLogo.jpeg" />
+			</video>
+			<br/>
+			<button type="button" onclick="toFrontPage()">Enter Site</button>
 		</div>
 	</body>
 </html>

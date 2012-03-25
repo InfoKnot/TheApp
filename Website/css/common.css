@@ -1,0 +1,4 @@
+body {text-align:center;}
+#pageHeader{background: url(bg/bgHeader.png) no-repeat center top;}
+#content{background: url(bg/bgContent.png) repeat-y center top;}
+#pageFooter{background: url(bg/bgFooter.png) no-repeat center top;}
