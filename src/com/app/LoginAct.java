@@ -10,7 +10,8 @@ import com.app.user.User;
 
 public class LoginAct extends Activity
 {
-	/*private static User _user;
+	/*
+	private static User _user;
 
 	public static User GetUser()
 	{
@@ -64,4 +65,5 @@ public class LoginAct extends Activity
 		setResults(RESULT_OK);
 		finish();
 	}*/
+	*/
 }

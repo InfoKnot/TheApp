@@ -8,9 +8,11 @@ import com.app.user.UserType;
 
 public class AppActManager
 {
+	public static AppActManager instance = new AppActManager();
+	
 	private List<Object> _actList;
 	
-	public AppActManager()
+	private AppActManager()
 	{
 		_actList = new ArrayList<Object>();
 	}

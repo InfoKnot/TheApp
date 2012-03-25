@@ -1,4 +1,8 @@
 package com.app.user;
+
+import com.app.user.loginservice.ILoginService;
+import com.app.user.loginservice.MockLoginImpl;
+
 /**
  * 
  * @author Devin Kelly-Collins
@@ -8,6 +12,28 @@ public class User {
 	private String _name;
 	private String _phone;
 	private String _email;
+	
+	public static User LoggedUser = null;
+	
+	public static User LoginUser(String username, String password) throws Exception
+	{
+		if(LoggedUser != null)
+			throw new Exception("LoggedUser != null, must log out current user.");
+		
+		ILoginService loginService = new MockLoginImpl();
+		LoggedUser = loginService.LoginUser(username, password);
+		return LoggedUser;
+	}
+	
+	public static void LogoutUser() throws Exception
+	{
+		if(LoggedUser == null)
+			throw new Exception("LoggedUser == null, no user to log out");
+		
+		ILoginService loginService = new MockLoginImpl();
+		loginService.LogoutUser();
+		LoggedUser = null;
+	}
 	
 	public User(){
 		_userType = null;

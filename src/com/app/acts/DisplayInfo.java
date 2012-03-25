@@ -5,11 +5,11 @@ import java.util.Map;
 
 public class DisplayInfo 
 {
-	public final String USERLEVEL = "userlevel";
-	public final String ICON = "icon";
-	public final String DISPLAYNAME = "displayname";
-	public final String CLASSPAKAGE = "classpakage";
-	public final String CLASSNAME = "classname";
+	public static final String USERLEVEL = "userlevel";
+	public static final String ICON = "icon";
+	public static final String DISPLAYNAME = "displayname";
+	public static final String CLASSPAKAGE = "classpakage";
+	public static final String CLASSNAME = "classname";
 	
 	private Map displayInfo;
 	
