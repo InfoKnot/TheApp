@@ -1,2 +1,2 @@
 .entry{}
-.entry img {}
+.entry img {border: 3px solid black; margin: 10px;}
