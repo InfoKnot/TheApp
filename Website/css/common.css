@@ -1,4 +1,12 @@
-body {text-align:center;}
-#pageHeader{background: url(bg/bgHeader.png) no-repeat center top;}
-#content{background: url(bg/bgContent.png) repeat-y center top;}
-#pageFooter{background: url(bg/bgFooter.png) no-repeat center top;}
+body {width: 800px; text-align:center; margin: 5px auto 5px auto;}
+#pageHeader{background: url(bg/bgHeader.png) no-repeat center top; margin: 0 0 -15px 0;}
+#pageHeader img{padding-top:10px;}
+.navBar{font-size:25px;}
+.navBarCur{color:blue;}
+.navBarItem{color:black;}
+#content{background: url(bg/bgContent.png) repeat-y center top; margin:-20px 0 -20px 0;}
+#content p {width: 97%; margin-left: auto; margin-right:auto;}
+.space {padding: 10px 0 10px 0;}
+#pageFooter{background: url(bg/bgFooter.png) no-repeat center bottom; margin: -15px 0 0 0;}
+#pageFooter img {border: none;}
+#pageFooter.space{padding-bottom: 10px}
