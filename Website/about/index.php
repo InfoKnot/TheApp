@@ -1,21 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<?php $root = "../" ?>
 <html>
 	<head>
 		<title>InfoKnot - About</title>
-		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/about.css">
+		<link rel="stylesheet" type="text/css" href=<?php echo "'".$root."resources/css/common.css'"; ?>/>
+		<link rel="stylesheet" type="text/css" href="resources/css/about.css">
 	</head>
 	<body>
-		<div id="pageHeader">
-			<img src="pics/InfoKnotLogo.png"/>
-			<img src="pics/InfoKnotSolgan.png"/>
-			<h1 class="navBar">
-				<a href="frontpage.html" class="navBarItem">Home</a> |
-				<a href="about.html" class="navBarCur">About</a> |
-				<a href="founders.html" class="navBarItem">Founders</a> |
-				<a href="product.html" class="navBarItem">Product</a> 
-			</h1>
-		</div>
+		<?php include($root."header.html"); ?>
 		<div id="content">
 			<div class="space"></div>
 			<h3>About InfoKnot</h3>
@@ -26,16 +18,7 @@
 			<p>InfoKnot is a custom-fit program developer. We mold services, events, contacts, calendars, etc. to each user individually based on their interests and needs. We help companies tie their services into one easy to navigate and universally accessible (computer, tablet, phone, etc.) format.
 			<div class="space"></div>
 		</div>
-		<div id="pageFooter">
-			<span>
-				<a href="http://www.facebook.com/InfoKnot"><img src="pics/fbButton.png" /></a>
-				<a href="http://www.linkedin.com/companies/InfoKnot"><img src="pics/liButton.png" /></a>
-				<a href="http://www.twitter.com/Info_Knot"><img src="pics/tButton.png" /></a>
-				<br/>
-				Contact Us: <a href="mailto:support@infoknotsolutions.com?Subject=Requesting%20support">Support@InfoKnotSolutions.com</a>
-				<br/><div class="space"></div>
-			</span>
-		</div>
+		<?php include($root."footer.html"); ?>
 	</body>
 </html>
 	
