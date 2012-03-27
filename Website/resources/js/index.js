@@ -1,5 +1,5 @@
 function toFrontPage() {
-	window.location = "frontpage.html"
+	window.location = "frontpage.php"
 }
 
 function resize(id) {

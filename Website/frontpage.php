@@ -1,4 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<?php $root=""; ?>
 <html>
 	<head>
 		<title>InfoKnot - Homepage</title>
@@ -14,9 +15,9 @@
 			<div class="entry">
 				<h3>What is InfoKnot?</h3>
 				<p>InfoKnot brings together all of the vast information that we havae today and ties together what works best for you.</p>
-				<p>To read more about what we do see <a href="about.html">About</a></p>
-				<p>To meet the founders of the company see <a href="founders.html">Founders</a></p>
-				<p>To see more about our product see <a href="founders.html">Product</a></p>
+				<p>To read more about what we do see <a href="/about">About</a></p>
+				<p>To meet the founders of the company see <a href="/founders">Founders</a></p>
+				<p>To see more about our product see <a href="/product">Product</a></p>
 			</div>
 			<div class="space"></div>
 		</div>
