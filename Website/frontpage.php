@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="resources/css/common.css"/>
 	</head>
 	<body>
-		<!--#include virtual="header.html" -->
+		<?php include("header.html"); ?>
 		<div id="content">
 			<div class="space"></div>
 			<div class="entry">
@@ -20,6 +20,6 @@
 			</div>
 			<div class="space"></div>
 		</div>
-		<!--#include virtual="footer.html" -->
+		<?php include("footer.html"); ?>
 	</body>
 </html>

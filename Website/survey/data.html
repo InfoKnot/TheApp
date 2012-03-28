@@ -1,13 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<title>InfoKnot - Product</title>
-		<script type="text/javascript" src="js/common.js"></script>
-		<script type="text/javascript" src="js/product.js"></script>
+		<title>InfoKnot - Market Research</title>
+		<script type="text/javascript" src="js/data.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/product.css"/>
+		<link rel="stylesheet" type="text/css" href="css/data.css"/>
 	</head>
-	<body>
+	<body onload="resizeFrame('frame')">
 		<div id="pageHeader">
 			<img src="pics/InfoKnotLogo.png"/>
 			<img src="pics/InfoKnotSolgan.png"/>
@@ -15,19 +14,14 @@
 				<a href="frontpage.html" class="navBarItem">Home</a> |
 				<a href="about.html" class="navBarItem">About</a> |
 				<a href="founders.html" class="navBarItem">Founders</a> |
-				<a href="product.html" class="navBarCur">Product</a> 
+				<a href="product.html" class="navBarItem">Product</a> 
 			</h1>
 		</div>
 		<div id="content">
 			<div class="space"></div>
-				<video class="walkthrough" controls="controls">
-				<source src="vids/KSU_TheApp_Walkthrough_Resident Assistant.webm" type="video/webm" />
-				<source src="vids/KSU_TheApp_Walkthrough_Resident Assistant.mp4" type="video/mp4" />
-				<source src="vids/KSU_TheApp_Walkthrough_Resident Assistant.mov" type="video/mov" />
-				<p>We're sorry. There has been a technical issue. <a href="vids/KSU_TheApp_Walkthrough_Resident Assistant.mov">Click here</a> to download the movie.</p>
-			</video>
-				<p>Due to technical issues all of the product walkthroughs are not available at this time.</p>
-				<p><a href="data.html">Click here</a> to see market research</p>
+			<a href="product.html"><- Back To Product Page</a>
+			<p>Some percentages have not been calculated correctly in the following charts.</p>
+			<iframe id="frame" src="docs/KSUMobileAccess.pdf"></iframe>
 			<div class="space"></div>
 		</div>
 		<div id="pageFooter">
